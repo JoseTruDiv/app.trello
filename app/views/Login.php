@@ -1,3 +1,5 @@
+<?php require_once __DIR__.'/../widgets/forms/FormLogin.php'; ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +8,10 @@
     <title>Document</title>
 </head>
 <body class="body-login">
-    <h1>Login</h1>
+    <header></header>
+    <main>
+        <?= FormLogin(); ?>
+    </main>
+    <footer></footer>
 </body>
 </html>

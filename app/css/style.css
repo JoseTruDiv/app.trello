@@ -11,8 +11,8 @@
 /***************************************COLORES GENERALES***************************************************/
 /***************************************FUENTES GENERALES***************************************************/
 @font-face {
-  font-family: "Calibri";
-  src: url("./fonts/Calibri-fonts/calibri-regular.ttf");
+  font-family: "Segoe";
+  src: url("../fonts/Segoe UI/Segoe UI.ttf");
 }
 /***************************************FUNCIONES DE FUENTES***************************************************/
 /***************************************MEDIDAS GENERALES***************************************************/
@@ -661,12 +661,6 @@
   gap: 10rem;
 }
 
-.body-login {
-  background-size: cover;
-  height: 100vh;
-  background-image: url("../imgs/Captura de pantalla 2025-11-08 172312.png");
-}
-
 .g-05 {
   gap: 0.5rem;
 }
@@ -853,31 +847,31 @@ li {
 
 /***************************************FUENTES GENERALES***************************************************/
 h1 {
-  font-family: "Calibri";
+  font-family: "Segoe";
   font-size: 2.8rem;
   font-style: normal;
-  color: #fff;
+  color: #000000;
 }
 
 h2 {
-  font-family: "Calibri";
+  font-family: "Segoe";
   font-size: 2rem;
   font-style: normal;
-  color: #fff;
+  color: #000000;
 }
 
 h3 {
-  font-family: "Calibri";
+  font-family: "Segoe";
   font-size: 1.6rem;
   font-style: normal;
-  color: #fff;
+  color: #000000;
 }
 
 .text {
-  font-family: "Calibri";
+  font-family: "Segoe";
   font-size: 1rem;
   font-style: normal;
-  color: #fff;
+  color: #000000;
 }
 
 .font-bold {
@@ -885,178 +879,58 @@ h3 {
 }
 
 .a {
-  font-family: "Calibri";
+  font-family: "Segoe";
   font-size: 1rem;
   font-style: normal;
-  color: #FFFFFF;
+  color: #8fbdfc;
   text-decoration: none;
 }
 
 .a:hover {
-  color: #CC00FF;
+  color: #0c66e4;
 }
 
 /***************************************HOME***************************************************/
 /***************************************AUTH***************************************************/
-.container-auth {
-  width: 100%;
-  height: 90vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.box {
-  background-color: #fff;
-  border-radius: 1rem;
-  padding: 2rem;
-  width: 30%;
-  height: 100%;
-}
-
-.logo-auth {
-  height: 6rem;
-}
-
-.input {
-  padding: 0.5rem;
-  width: 100%;
-}
-
-.input:focus {
-  outline: none;
-}
-
-.btn-auth {
-  background-color: green;
-  border-radius: 0.3rem;
-  color: #fff;
-  padding: 0.6rem 3rem;
-  cursor: pointer;
-  border: none;
-  outline: none;
-}
-
-.btn-auth:hover {
-  opacity: 0.7;
-}
-
-@keyframes alertAnimations {
-  0% {
-    transform: translateX(-500px);
-  }
-  100% {
-    transform: translateX(0px);
-  }
-}
 /***************************************LOGIN***************************************************/
-.fond-img-login {
-  height: 100vh;
-  background-image: url("../img/fashionable-woman.jpg");
+.body-login {
   background-size: cover;
-  background-repeat: no-repeat;
-  background-position: 0% 30%;
-}
-
-.fond-img-reg {
   height: 100vh;
-  background-image: url("../img/woman-wearing-headphone-while-singing-against-white-background.jpg");
-  background-size: 135%;
-  background-repeat: no-repeat;
-  background-position: 100% 40%;
+  background-color: #fafbfc;
+  background-image: url("../imgs/Captura de pantalla 2025-11-08 172312.png");
 }
 
-.content-login {
-  height: 100vh;
-  background-color: rgba(50, 1, 75, 0.749);
-}
-
-.content-reg {
-  height: 100vh;
-  background-color: rgba(1, 29, 75, 0.749);
-}
-
-.box-login-xxl {
-  background-color: #000000;
-  border-radius: 1rem;
-  width: 31rem;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-}
-
-.box-login-mobile {
-  display: none;
-  border-radius: 1rem;
-  width: 90%;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-}
-
-.text-logo {
-  font-family: "Calibri";
-  font-size: 2.5rem;
-  font-style: normal;
-  color: #fff;
+.box-login {
+  background-color: #fff;
+  width: 25rem;
+  padding: 2rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+  border-radius: 0.3rem;
 }
 
 .btn-login {
-  background-color: #CC00FF;
+  opacity: 0.8;
+  transition: opacity 0.3s;
   color: #fff;
-  text-decoration: none;
-  padding: 1rem 2rem;
-  text-align: center;
-  border-radius: 1rem;
-  font-family: "Calibri";
-  font-size: 1.3rem;
+  background-color: #0c66e4;
+  font-family: "Segoe";
   width: 100%;
-  transition: 0.6s;
+  border: none;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+  text-align: center;
   cursor: pointer;
 }
 
 .btn-login:hover {
-  transform: scale(0.9);
-}
-
-.btn-google {
-  background-color: #fff;
-  color: #000000;
-  text-decoration: none;
-  padding: 0.2rem 2rem;
-  border-radius: 1rem;
-  font-family: "Calibri";
-  font-size: 1.3rem;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.6s;
-}
-
-.btn-google:hover {
-  transform: scale(0.9);
-}
-
-.a-link {
-  color: #fff;
-  font-weight: bold;
-  font-family: "Calibri";
-}
-
-.a-link:hover {
-  color: #CC00FF;
+  opacity: 1;
 }
 
 .input-login {
-  background-color: #7C7C7C;
-  color: #fff;
-  font-family: "Calibri";
   width: 100%;
-  padding: 1rem;
-  font-size: 1.3rem;
-  border: none;
-  border-radius: 4px;
-}
-
-.input-login::placeholder {
-  color: #fff;
+  padding: 0.5rem;
+  font-family: "Segoe";
+  color: #000000;
 }
 
 /***************************************REGISTRO***************************************************/
@@ -1066,7 +940,7 @@ h3 {
 /***************************************CONTACTOS***************************************************/
 /***************************************FOOTER***************************************************/
 .a-footer {
-  font-family: "Calibri";
+  font-family: "Segoe";
   font-size: 1rem;
   font-style: normal;
   text-decoration: none;
@@ -1074,7 +948,7 @@ h3 {
 }
 
 .a-footer:hover {
-  color: #FFFFFF;
+  color: #8fbdfc;
 }
 
 /***********************************************************************************************************/
@@ -1592,11 +1466,11 @@ h3 {
     gap: 10rem !important;
   }
   .header {
-    background-color: #CC00FF;
+    background-color: #0c66e4;
     padding: 3rem;
   }
   .footer {
-    background-color: #CC00FF;
+    background-color: #0c66e4;
     padding: 3rem;
   }
   .main {
@@ -1613,17 +1487,17 @@ h3 {
     display: flex !important;
   }
   h1 {
-    font-family: "Calibri";
+    font-family: "Segoe";
     font-size: 2.5rem;
     font-style: normal;
   }
   h2 {
-    font-family: "Calibri";
+    font-family: "Segoe";
     font-size: 1.8rem;
     font-style: normal;
   }
   h3 {
-    font-family: "Calibri";
+    font-family: "Segoe";
     font-size: 1.4rem;
     font-style: normal;
   }
@@ -1651,7 +1525,7 @@ h3 {
   .nav-img {
     width: 12rem;
     height: 12rem;
-    background-color: #FFFFFF;
+    background-color: #8fbdfc;
     border-radius: 100%;
     background-image: url("../imgs/1712518671384.png");
     background-size: cover;
@@ -1702,17 +1576,17 @@ h3 {
     display: flex !important;
   }
   h1 {
-    font-family: "Calibri";
+    font-family: "Segoe";
     font-size: 2rem;
     font-style: normal;
   }
   h2 {
-    font-family: "Calibri";
+    font-family: "Segoe";
     font-size: 1.5rem;
     font-style: normal;
   }
   h3 {
-    font-family: "Calibri";
+    font-family: "Segoe";
     font-size: 1.2rem;
     font-style: normal;
   }

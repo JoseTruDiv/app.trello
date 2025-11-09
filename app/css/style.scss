@@ -16,12 +16,12 @@
 
 /***************************************COLORES GENERALES***************************************************/
 
- $color-principal: #CC00FF;
- $color-secundario: #FFFFFF;
- $color-text: #fff;
+ $color-principal: #0c66e4;
+ $color-secundario: #8fbdfc;
+ $color-text: #000000;
  $color-terciario: #5A595B;
  $color-fondo: #fff;
- $color-enfasis: #000000;
+ $color-enfasis: #fff;
  $color-enlace: $color-secundario;
  $color-enlaceHover: $color-principal;
 
@@ -32,13 +32,13 @@
 /***************************************FUENTES GENERALES***************************************************/
 
 @font-face {
-    font-family: 'Calibri';
-    src: url('./fonts/Calibri-fonts/calibri-regular.ttf');
+    font-family: 'Segoe';
+    src: url('../fonts/Segoe UI/Segoe UI.ttf');
 }
 
 
 $font-text: (
-  'family': "Calibri",
+  'family': "Segoe",
   'size': 1rem,
   'weigth': 400,
   'style': normal,
@@ -46,7 +46,7 @@ $font-text: (
 );
 
 $font-H1: (
-  'family': "Calibri",
+  'family': "Segoe",
   'size': 2.8rem,
   'weigth': 900,
   'style': normal,
@@ -54,7 +54,7 @@ $font-H1: (
 );
 
 $font-H1-tablet: (
-  'family': "Calibri",
+  'family': "Segoe",
   'size': 2.5rem,
   'weigth': 900,
   'style': normal,
@@ -62,7 +62,7 @@ $font-H1-tablet: (
 );
 
 $font-H1-mobile: (
- 'family': "Calibri", 
+ 'family': "Segoe", 
   'size': 2rem,
   'weigth': 900,
   'style': normal,
@@ -70,21 +70,21 @@ $font-H1-mobile: (
 
 
 $font-H2: (
-  'family': "Calibri",
+  'family': "Segoe",
   'size': 2rem,
   'weigth': 900,
   'style': normal,
 );
 
 $font-H2-tablet: (
-  'family': "Calibri", 
+  'family': "Segoe", 
   'size': 1.8rem,
   'weigth': 900,
   'style': normal,
 );
 
 $font-H2-mobile: (
-  'family': "Calibri", 
+  'family': "Segoe", 
   'size': 1.5rem,
   'weigth': 900,
   'style': normal,
@@ -92,7 +92,7 @@ $font-H2-mobile: (
 
 
 $font-H3: (
-  'family': "Calibri",
+  'family': "Segoe",
   'size': 1.6rem,
   'weigth': 700,
   'style': normal,
@@ -100,14 +100,14 @@ $font-H3: (
 );
 
 $font-H3-tablet: (
-  'family': "Calibri",
+  'family': "Segoe",
   'size': 1.4rem,
   'weigth': 700,
   'style': normal,
 );
 
 $font-H3-mobile: (
-  'family': "Calibri",
+  'family': "Segoe",
   'size': 1.2rem,
   'weigth': 700,
   'style': normal,
@@ -115,7 +115,7 @@ $font-H3-mobile: (
 
 
 $font-btn: (
-  'family': "Calibri",
+  'family': "Segoe",
   'size': 1,
   'weigth': 400,
   'style': normal,
@@ -217,11 +217,7 @@ $xxl: 1200px; // Extra grande (pantallas grandes)
 }
 
 
-.body-login{
-    background-size: cover;
-    height: 100vh;
-    background-image: url('../imgs/Captura\ de\ pantalla\ 2025-11-08\ 172312.png');
-}
+
 
 .g-05{
     gap: 0.5rem;
@@ -380,176 +376,54 @@ h3{
 
 /***************************************AUTH***************************************************/
 
-.container-auth{
-    width: 100%;
-    height: 90vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.box{
-    background-color: #fff;
-    border-radius: 1rem;
-    padding: 2rem;
-    width: 30%;
-    height: 100%;
-}
-
-.logo-auth{
-    height: 6rem;
-}
-
-.input{
-    padding: 0.5rem;
-    width: 100%;
-}
-
-.input:focus{
-    outline: none;
-}
-
-
-.btn-auth{
-    background-color: green;
-    border-radius: 0.3rem;
-    color: #fff;
-    padding: 0.6rem 3rem;
-    cursor: pointer;
-    border: none;
-    outline: none;
-}
-
-.btn-auth:hover{
-    opacity: 0.7;
-}
-
-
-
-@keyframes alertAnimations {
-    0%{
-        transform: translateX(-500px);
-    }
-    100%{
-        transform: translateX(0px);
-    }
-}
-
 
 
 
 /***************************************LOGIN***************************************************/
 
-.fond-img-login{
-    height: 100vh;
-    background-image: url('../img/fashionable-woman.jpg');
+
+.body-login{
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: 0% 30%;
-}
-
-.fond-img-reg{
     height: 100vh;
-    background-image: url('../img/woman-wearing-headphone-while-singing-against-white-background.jpg');
-    background-size: 135%;
-    background-repeat: no-repeat;
-    background-position: 100% 40%;
+    background-color: #fafbfc;
+    background-image: url('../imgs/Captura\ de\ pantalla\ 2025-11-08\ 172312.png');
 }
 
+.box-login{
+    background-color: #fff;
+    width: 25rem;
+    padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+    border-radius: 0.3rem;
 
-.content-login{
-    height: 100vh;
-    background-color: rgba(50, 1, 75, 0.749);
-}
-
-.content-reg{
-    height: 100vh;
-    background-color: rgba(1, 29, 75, 0.749);
-}
-
-.box-login-xxl{
-    background-color: #000000;
-    border-radius: 1rem;
-    width: 31rem;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-}
-
-.box-login-mobile{
-    display: none;
-    border-radius: 1rem;
-    width: 90%;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
-}
-
-.text-logo{
-    font-family: get-map($font-text, 'family');
-    font-size: 2.5rem;
-    font-weight: get-map($font-text, 'weight');
-    font-style: get-map($font-text, 'style');
-    color: #fff;
 }
 
 .btn-login{
-    background-color: $color-principal;
-    color: $color-text;
-    text-decoration: none;
-    padding: 1rem 2rem;
-    text-align: center;
-    border-radius: 1rem;
-    font-family: get-map($font-text, 'family');
-    font-size: 1.3rem;
+    opacity: 0.8;
+    transition: opacity 0.3s;
+    color: #fff;
+    background-color: #0c66e4;
+    font-family: get-map($font-text,'family');
     width: 100%;
-    transition: 0.6s;
+    border: none;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    text-align: center;
     cursor: pointer;
 }
 
 .btn-login:hover{
-    transform: scale(0.9);
-}
-
-.btn-google{
-    background-color: $color-text;
-    color: $color-enfasis;
-    text-decoration: none;
-    padding: 0.2rem 2rem;
-    border-radius: 1rem;
-    font-family: get-map($font-text, 'family');
-    font-size: 1.3rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: 0.6s;
-}
-
-.btn-google:hover{
-    transform: scale(0.9);
-}
-
-.a-link{
-    color: $color-text;
-    font-weight: bold;
-    font-family: get-map($font-text, 'family');
-}
-
-.a-link:hover{
-    color: $color-principal;
+    opacity: 1;
 }
 
 .input-login{
-    background-color: #7C7C7C;
-    color: #fff;
-    font-family: get-map($font-text, 'family');
     width: 100%;
-    padding: 1rem;
-    font-size: 1.3rem;
-    border: none;
-    border-radius: 4px;
+    padding: 0.5rem;
+    font-family: get-map($font-text, 'family');
+    color: #000000;
 }
 
-.input-login::placeholder{
-    color: #fff;
-}
+
 
 /***************************************REGISTRO***************************************************/
 
