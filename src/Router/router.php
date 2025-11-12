@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\PATH\RegistroPathController;
+
 class Router{
 
     public $Home;
@@ -12,8 +14,8 @@ class Router{
     public function redirect($url){
         switch ($url) {
             case '/':
-                require_once __DIR__.'/../Controllers/PATH/HomeControllerPath.php';
-                $controller = new HomeControllerPath();
+                require_once __DIR__.'/../Controllers/PATH/LoginControllerPath.php';
+                $controller = new LoginControllerPath();
                 $controller->index();
                 break;
             case '/login':
@@ -21,10 +23,19 @@ class Router{
                 $controller = new LoginControllerPath();
                 $controller->index();
                 break;
-
+            case '/home':
+                require_once __DIR__.'/../Controllers/PATH/HomeControllerPath.php';
+                $controller = new HomeControllerPath();
+                $controller->index();
+                break;
+            case '/reg':
+                require_once __DIR__.'/../Controllers/PATH/RegistrarControllerPath.php';
+                $controller = new RegistrarPathController();
+                $controller->index();
+                break;
             case '/setUser':
                 require_once __DIR__.'/../Controllers/POST/SetUserController.php';
-                $controller = new LoginControllerPath();
+                $controller = new SetUserController();
                 $controller->index();
                 break;
             

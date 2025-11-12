@@ -1,4 +1,19 @@
-<?php require_once __DIR__.'/../widgets/forms/FormLogin.php'; ?>
+<?php 
+
+require_once __DIR__.'/../widgets/forms/FormLogin.php';
+require_once __DIR__.'/../widgets/alerts/UsuarioRegAlert.php'; 
+
+?>
+
+<?php
+    session_start();
+    if (isset($_SESSION['reg'])) {
+        if ($_SESSION['reg']) {
+            UsuarioRegAlert();
+            $_SESSION['reg']=false;
+        }
+    }
+?>
 
 <!DOCTYPE html>
 <html lang="es">

@@ -934,6 +934,31 @@ h3 {
 }
 
 /***************************************REGISTRO***************************************************/
+.alert-green {
+  background-color: #d1e7dd;
+  color: #0f5132;
+  padding: 1rem;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Segoe";
+}
+
+.animation-alert-closed {
+  animation: 1s animation-alert-closed ease-in-out forwards;
+}
+
+@keyframes animation-alert-closed {
+  0% {
+    top: 0;
+  }
+  100% {
+    top: -4rem;
+  }
+}
 /***************************************INICIO***************************************************/
 /***************************************PROYECTOS***************************************************/
 /***************************************TAREAS***************************************************/
