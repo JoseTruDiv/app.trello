@@ -2,6 +2,7 @@
 
 require_once __DIR__.'/../widgets/forms/FormLogin.php';
 require_once __DIR__.'/../widgets/alerts/UsuarioRegAlert.php'; 
+require_once __DIR__.'/../widgets/alerts/UsuarioNoLogin.php'; 
 
 ?>
 
@@ -11,6 +12,17 @@ require_once __DIR__.'/../widgets/alerts/UsuarioRegAlert.php';
         if ($_SESSION['reg']) {
             UsuarioRegAlert();
             $_SESSION['reg']=false;
+        }
+    }
+    if (isset($_SESSION['result'])) {
+        if ($_SESSION['result']==0) {
+            UsuarioNoLogin();
+            $_SESSION['result']=null;
+        }
+    }
+    if (isset($_SESSION['recordarme'])) {
+        if ($_SESSION['recordarme']) {
+            header('Location:/home');
         }
     }
 ?>

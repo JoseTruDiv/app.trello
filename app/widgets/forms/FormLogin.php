@@ -49,6 +49,7 @@
             </div>
             <div class="d-flex justify-center flex-column">
                 <input type="hidden" name="emailLogin" id="emailLoginHidden">
+                <input type="hidden" name="savePoint" id="savePoint">
                 <input type="password" class="text input-login" name="passwordLogin" id="passwordLogin" placeholder="password" required>
             </div>
             <div>
@@ -72,14 +73,10 @@
     const boxPassword = document.getElementById('box-password')
     document.getElementById('form01').addEventListener('submit',(e)=>{
         e.preventDefault();
+        document.getElementById('savePoint').value = document.getElementById('save-point').checked ? '1' : '0';
     })
     document.getElementById('btn-email-login').addEventListener('click',(e)=>{
-        if (document.getElementById('save-point').checked) {
-            
-        }else{
-            document.getElementById('emailLoginHidden').value=emailLogin.value;
-        }
-
+        document.getElementById('emailLoginHidden').value=emailLogin.value;
         boxPassword.classList.add('d-block');
         boxPassword.classList.remove('d-none');
         boxEmail.classList.add('d-none');
@@ -88,9 +85,6 @@
 
     document.getElementById('form-login').addEventListener('submit',(e)=>{
         e.preventDefault();
-        if (document.getElementById('save-point').checked) {
-            
-        }
         axiosVM = new AxiosVM();
         axiosVM.index(e.target.action,e);
     })

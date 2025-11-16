@@ -23,20 +23,20 @@ class User{
     }
 
     public function getUser(){
-        $sql = 'SELECT id, password FROM user WHERE email=:email';
         try {
             $pdo = db();
+            $sql = 'SELECT idUser, password FROM user WHERE email=:email';
             $stmt = $pdo->prepare($sql);
             $stmt->bindParam(':email', $this->email, PDO::PARAM_STR);
             $stmt->execute();
             $user_row = $stmt->fetch(PDO::FETCH_ASSOC);
-            if ($user_row && password_verify($this->password, $user_row['password'])) {
-                return $user_row['id'];
+            if (password_verify($this->password, $user_row['password'])) {
+                return $this->email;
             }else{
                 return 0;
             }
         } catch (\Throwable $th) {
-            return 0;
+            return $th;
         }
     }
 }

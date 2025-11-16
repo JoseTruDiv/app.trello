@@ -440,6 +440,19 @@ h3{
     font-family: get-map($font-text, 'family');
 }
 
+.alert-red{
+    background-color: #e7d1d1;
+    color: #510f0f;
+    padding: 1rem;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: get-map($font-text, 'family');
+}
+
 
 .animation-alert-closed{
     animation: 1s animation-alert-closed ease-in-out forwards;
@@ -459,9 +472,27 @@ h3{
 
 /***************************************INICIO***************************************************/
 
+.body-home{
+    background-color: #1f1f21;
+}
 
+.nav-home{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
 
+.select-nav{
+    padding: 5px;
+    border-radius: 0.3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.select-nav:hover{
+    background-color: #ffffff3c;
+}
 
 /***************************************PROYECTOS***************************************************/
 
