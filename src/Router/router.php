@@ -38,6 +38,11 @@ class Router{
                 $controller = new SetUserController();
                 $controller->index();
                 break;
+            case '/getUser':
+                require_once __DIR__.'/../Controllers/POST/GetUserController.php';
+                $controller = new GetUserController();
+                $controller->index();
+                break;
             
             default:
                 echo '<h1 style="color:red">ERROR 404</h1>';
