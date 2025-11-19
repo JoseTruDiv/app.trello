@@ -1,5 +1,5 @@
 <?php
-    require_once __DIR__.'/../sections/FooterBoxReg.php';
+    require_once __DIR__.'/../sections/Registrar/FooterBoxReg.php';
 ?>
 
 <?php function FormReg(){?>

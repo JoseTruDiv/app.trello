@@ -1,6 +1,13 @@
 <?php
     session_start();
-    require_once __DIR__.'/../widgets/sections/NavHome.php';
+    require_once __DIR__.'/../widgets/sections/Home/NavHome.php';
+    require_once __DIR__.'/../widgets/sections/Home/SideNavHome.php';
+?>
+
+<?php
+    if (!isset($_SESSION['result'])) {
+        header('Location:/');
+    }
 ?>
 
 <!DOCTYPE html>
@@ -16,12 +23,16 @@
             <?= NavHome(); ?>
         </nav>
     </header>
-    <main>
+    <main class="d-flex pt-1">
+        <div style="width: 20%;padding: 2rem 3rem;">
+            <?= SideNavHome(); ?>
+        </div>
+        <div style="width: 80%;">
 
+        </div>
     </main>
     <footer>
 
     </footer>
-    <h1>Bienvenido <?php echo $_SESSION['result']; ?></h1>
 </body>
 </html>

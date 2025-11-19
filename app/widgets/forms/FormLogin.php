@@ -1,5 +1,5 @@
 <?php
-    require_once __DIR__.'/../sections/FooterBoxLogin.php';
+    require_once __DIR__.'/../sections/Login/FooterBoxLogin.php';
 ?>
 
 <?php function FormLogin(){?>

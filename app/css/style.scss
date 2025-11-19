@@ -472,13 +472,18 @@ h3{
 
 /***************************************INICIO***************************************************/
 
+
+
 .body-home{
     background-color: #1f1f21;
 }
 
+/*NAV*/
+
 .nav-home{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 10px;
 }
 
@@ -493,6 +498,48 @@ h3{
 .select-nav:hover{
     background-color: #ffffff3c;
 }
+
+.nav-modal-user{
+    background-color: #2b2c2f;
+    position: absolute;
+    right: 0.5%;
+    top: 7%;
+    max-height: 780px;
+    width: 320px;
+    border-radius: 0.4rem;
+}
+
+ .input-search-trello{
+            background: none;
+            color: #96999E;
+            border: none;
+            width: 100%;
+        }
+        .input-search-trello:focus{
+            border: none;
+            box-shadow: none;
+            outline: none;
+        }
+
+.search-tableros{
+    border: 1px solid #96999E;
+    border-radius: 0.4rem;
+    display: flex;
+    align-items: center;
+    width: 40rem;
+    padding: 0.4rem;
+    background-color: #242528;
+}
+
+.search-tableros:hover{
+    background-color: #62656c6b;
+}
+
+
+/*MAIN*/
+
+
+/*FOOTER*/
 
 /***************************************PROYECTOS***************************************************/
 

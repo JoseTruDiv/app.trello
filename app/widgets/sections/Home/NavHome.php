@@ -1,6 +1,7 @@
 
 <?php
-
+    require_once __DIR__.'/../../modals/NavModal.php';
+    require_once __DIR__.'/../../search/NavSearchTableros.php';
    function NavHome(){
 
 ?>
@@ -12,10 +13,31 @@
     </div>
 
     <div>
+        <?= NavSearchTableros(); ?>
+    </div>
+
+    <div>
         <a href="#" id="user-nav" class="select-nav">
             <img width="30" src="https://trello-members.s3.amazonaws.com/6706cd4e4e0657e62ad8ff3d/d94f92f34779024745a5a1aea7e98448/50.png" alt="">
         </a>
     </div>
+    <?= NavModal(); ?>
+
+    <script>
+        var modalBooleanUser = false;
+        document.getElementById('user-nav').addEventListener('click',(e)=>{
+            e.preventDefault();
+            if (!modalBooleanUser) {
+                document.getElementById('nav-modal-user').classList.remove('d-none');
+                modalBooleanUser=true;
+            } else {
+                document.getElementById('nav-modal-user').classList.add('d-none');
+                modalBooleanUser=false;
+            } 
+            
+        })
+    </script>
+
 
 <?php
     }

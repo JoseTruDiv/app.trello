@@ -43,6 +43,11 @@ class Router{
                 $controller = new GetUserController();
                 $controller->index();
                 break;
+            case '/closedSessionUser':
+                require_once __DIR__.'/../Controllers/SESSION/ClosedSessionController.php';
+                $controller = new ClosedSessionController();
+                $controller->index();
+                break;
             
             default:
                 echo '<h1 style="color:red">ERROR 404</h1>';
